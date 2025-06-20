@@ -1,0 +1,7 @@
+model Event {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  type      String
+  productId Int?
+  timestamp DateTime @default(now())
+}
